@@ -1,12 +1,12 @@
-import { randomUUID } from 'crypto'
+import { randomUUID } from 'uncrypto'
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 
 export const users = sqliteTable('users', {
-  id: text('id').primaryKey().$default(() => randomUUID()),
-  name: text('name').notNull(),
-  email: text('email').unique().notNull(),
-  password: text('password').notNull(),
-  avatar: text('avatar'),
-  createdAt: integer('created_at', { mode: 'timestamp' }).$type<Date>().$default(() => new Date()),
-  updatedAt: integer('updated_at', { mode: 'timestamp' }).$type<Date>().$onUpdate(() => new Date()),
+  id: text().primaryKey().$default(() => randomUUID()),
+  name: text().notNull(),
+  email: text().unique().notNull(),
+  password: text(),
+  avatar: text(),
+  createdAt: integer({ mode: 'timestamp_ms' }).$default(() => new Date()),
+  updatedAt: integer({ mode: 'timestamp_ms' }).$onUpdate(() => new Date()),
 })
