@@ -11,5 +11,5 @@
 ## :wrench: Usage
 
 ```bash
-npx nuxi init -t github:larrasu/my-nuxt-starter
+pnpm create nuxt@latest -t github:larrasu/my-nuxt-starter
 ```
