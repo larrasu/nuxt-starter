@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     'nuxt-auth-utils',
     '@nuxt/ui',
+    '@nuxt/content',
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const features = ['NuxtHub', 'Nuxt UI', 'ESLint', 'Drizzle ORM']
+const features = ['NuxtHub', 'Nuxt UI', 'Nuxt Content', 'ESLint', 'Drizzle ORM']
 </script>
 
 <template>
