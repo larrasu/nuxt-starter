@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: title => title ? `${title} | My Nuxt Starter` : 'My Nuxt Starter'
+  titleTemplate: title => title ? `${title} | My Nuxt Starter` : 'My Nuxt Starter',
 })
 </script>
 
