@@ -5,7 +5,7 @@
 * **NuxtHub** - database and storage
 * **Nuxt Content**
 * **Nuxt UI** 
-* **Nuxt-Auth-Utils** - minimal authentication
+* **Nuxt Better Auth** 
 * **ESLint**
 * **Drizzle ORM** with **SQLite**
 

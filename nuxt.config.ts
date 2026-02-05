@@ -2,21 +2,50 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxthub/core',
-    'nuxt-auth-utils',
     '@nuxt/ui',
     '@nuxt/content',
+    '@nuxt/image',
+    '@nuxthub/core',
+    '@onmax/nuxt-better-auth',
   ],
+
+  $production: {
+    image: {
+      provider: 'cloudflare',
+      cloudflare: { baseURL: '/images' },
+    },
+  },
+
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  compatibilityDate: '2025-05-15',
-  hub: {
-    database: true,
-    blob: true,
+
+  routeRules: {
+    '/': { prerender: true },
   },
+
+  compatibilityDate: '2025-05-15',
+
+  nitro: {
+    // workaround for /sw.js warnings
+    devProxy: {
+      '/sw.js': { target: '/sw.js' },
+    },
+  },
+
+  hub: {
+    db: {
+      dialect: 'sqlite',
+      casing: 'snake_case',
+    },
+    blob: true,
+    kv: true,
+    cache: true,
+  },
+
   eslint: {
     config: {
       stylistic: true,
+      standalone: false,
     },
   },
 })
