@@ -1,0 +1,53 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".output/server/index.mjs",
+  "compatibility_date": "<deploy_date>",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public/"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
+  },
+  "vars": {
+    "NUXT_PUBLIC_SITE_URL": "<domain>"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "<database_name>",
+      "database_id": "<database_id>",
+      "migrations_table": "_hub_migrations",
+      "migrations_dir": "./server/db/migrations/sqlite/"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BLOB",
+      "bucket_name": "<bucket_name>"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "<kv_namespace_id>"
+    },
+    {
+      "binding": "CACHE",
+      "id": "<kv_namespace_id>"
+    }
+  ]
+}
