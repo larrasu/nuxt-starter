@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
 
   nitro: {
+    preset: 'cloudflare-module',
     // workaround for /sw.js warnings
     devProxy: {
       '/sw.js': { target: '/sw.js' },
