@@ -10,23 +10,21 @@ If someone else finds it useful, cool. If not, that is totally fine too.
 
 This starter comes preconfigured with tools I usually reach for:
 
-• **Nuxt 4 Ready**  
-• **NuxtHub**, database and object storage  
-• **Nuxt Content**, file based CMS  
-• **Nuxt UI**, UI components and styling utilities  
-• **Nuxt Better Auth**, authentication  
-• **Drizzle ORM + SQLite**, type safe database layer  
-• **ESLint**, linting and formatting  
-• **Cloudflare Wrangler config**, edge deployment ready  
-
-Nothing fancy, just enough to get me productive fast.
+• **Nuxt 4**  
+• **NuxtHub** - ship full-stack apps
+• **Nuxt Content** - file based CMS  
+• **Nuxt UI** - UI components and styling utilities  
+• **Nuxt Better Auth** - authentication  
+• **Drizzle ORM + SQLite** - headless TypeScript ORM
+• **ESLint** - linting and formatting  
+• **Cloudflare Wrangler config** - edge deployment ready  
 
 ## 🚀 Quick Start
 
 Create a new Nuxt project using this template:
 
 ```bash
-pnpm create nuxt@latest -t github:larrasu/my-nuxt-starter
+pnpm create nuxt@latest -t github:larrasu/nuxt-starter
 ```
 
 ## ⚙️ Included Nuxt Modules
