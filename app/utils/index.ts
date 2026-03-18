@@ -3,7 +3,10 @@
  * @param path
  * @returns Blob path.
  */
-export function hubImage(path: string) {
+export function hubImage(path: string | undefined | null) {
+  if (!path)
+    return undefined
+
   if (path.startsWith('http')) {
     return path
   }
