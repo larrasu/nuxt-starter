@@ -19,6 +19,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  content: {
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
+  },
+
   routeRules: {
     '/': { prerender: true },
   },
@@ -41,6 +48,13 @@ export default defineNuxtConfig({
     blob: true,
     kv: true,
     cache: true,
+  },
+
+  // Resolve: Unresolvable optimizeDeps.include entries
+  vite: {
+    optimizeDeps: {
+      include: [],
+    },
   },
 
   eslint: {
