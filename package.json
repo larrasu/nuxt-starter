@@ -2,7 +2,7 @@
   "name": "my-nuxt-starter",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@10.33.3",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -14,19 +14,19 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@libsql/client": "^0.17.0",
+    "@libsql/client": "^0.17.3",
     "@nuxt/content": "3.12.0",
     "@nuxt/image": "2.0.0",
-    "@nuxt/ui": "4.5.1",
+    "@nuxt/ui": "4.7.1",
     "@nuxthub/core": "0.10.7",
-    "@onmax/nuxt-better-auth": "0.0.2-alpha.30",
+    "@onmax/nuxt-better-auth": "0.0.2-alpha.31",
     "better-auth": "1.5.0-beta.11",
-    "better-sqlite3": "^12.8.0",
-    "drizzle-orm": "^0.45.1",
-    "nuxt": "^4.4.2",
-    "tailwindcss": "^4.2.2",
-    "vue": "^3.5.30",
-    "vue-router": "^5.0.3"
+    "better-sqlite3": "^12.9.0",
+    "drizzle-orm": "^0.45.2",
+    "nuxt": "^4.4.4",
+    "tailwindcss": "^4.2.4",
+    "vue": "^3.5.33",
+    "vue-router": "^5.0.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.3",
@@ -34,8 +34,8 @@
     "drizzle-kit": "^0.31.10",
     "eslint": "^9.39.4",
     "typescript": "^5.9.3",
-    "vue-tsc": "^3.2.6",
-    "wrangler": "^4.75.0"
+    "vue-tsc": "^3.2.8",
+    "wrangler": "^4.87.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
